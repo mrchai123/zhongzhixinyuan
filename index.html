@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中智信元</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		
+		.clear:after{
+			content: '';
+			height: 0;
+			display: block;
+			clear: both;
+		}
+	    .div{
+	    	background-color: rgb(250,250,250);
+	    	width: 1560px;
+	    }
+		.shou{
+			text-align: center;
+		    width: 1560px; 
+			height: 127px;
+		}
+		.list_1{
+			width: 672px;
+			height: 47px;
+			background-image: url(images/背景_03.png);
+			list-style: none;
+			margin-left: 445px;
+		}
+		.ldaohang1{
+			border-right:3px solid rgb(222 228 236) ;
+			text-align: center;
+			width: 85px;
+			float: left;
+			margin-top: 15px;
+            padding-bottom: px;
+		}
+		.ldaohang2{	
+			text-align: center;
+			width: 113px;
+			float: left;
+			margin-top: 15px;
+		}
+		.ldaohang{
+			border-right:3px solid rgb(222 228 236) ;
+			text-align: center;
+			width: 113px;
+			float: left;
+			margin-top: 15px;
+			padding-bottom: px;
+		}
+		.ldaohang>a{
+			color: rgb(51,51,51);
+		}
+		
+		.ldaohang:hover>a{
+			color: rgb(30,80,174);			
+			border-bottom: 2px solid blue;
+		}
+
+		.ldaohang1>a{
+			color: rgb(51,51,51);
+		}
+		
+		.ldaohang1:hover>a{
+			color: rgb(30,80,174);			
+			border-bottom: 2px solid blue;
+		}
+		.ldaohang2>a{
+			color: rgb(51,51,51);
+		}
+		
+		.ldaohang2:hover>a{
+			color: rgb(30,80,174);
+			
+			border-bottom: 2px solid blue;
+		}
+		
+
+		
+		.tu{
+			height: 410px;
+			width: 1560px;
+			background-image: url(images/zhongzhizhong_06.png);
+			background-repeat: no-repeat;
+		}
+		.fuwu{
+			margin-top: 60px;
+			
+			text-align: center;
+			font-style: 微软雅黑;
+			font-size: 32px;
+		}
+		.xiangmu{
+			margin-top: 65px;
+            margin-left: 245px;
+            width: 1080px;
+            height: 617px;
+		}
+		.xiang{
+            height: 365px;
+            width: 145px;
+            float: left;
+            margin-left:165px ;
+            text-align: center;
+            font-family: 微软雅黑;
+            font-size: 16px;
+		}
+		.xiang1{
+			height: 365px;
+            width: 145px;
+            float: left;
+            text-align: center;
+            font-family: 微软雅黑;
+            font-size: 16px;
+            left: 288.5px;
+            color: rgb( 51, 51, 51 );
+        }
+		.xul{
+			margin-top: 20px;
+			margin-left: 45px;
+			text-align: left;
+			font-family: 微软雅黑;
+			font-size: 14px;
+			color: rgb(144,144,144);
+			line-height: 1.857;
+			
+		}
+		.xul>li>a{
+			color: rgb(144,144,144);
+		}
+		.fangan{
+			height: 714px;
+			background-image: url(images/zhong_02.png);
+			width: 1560px;
+			background-repeat: no-repeat;
+			text-align: center;
+		}
+		.jiejue{
+			font-size: 30px;
+            font-family: 微软雅黑;
+            color: rgb( 255, 255, 255 );
+            position: absolute;
+            margin-left: 715px;
+            margin-top: 70px;
+		}
+		.solution{
+			font-size:22px;
+			margin-top:30px;
+			font-family: Aparajita;
+			color: rgb( 255, 255, 255 );
+			position: relative;
+        }
+		.zuo{
+			padding-top: 345px;
+			padding-left:180px;
+			width: 30px;
+			height: 40px;
+			position: absolute;
+		}
+		.beijing{
+			width: 210px;
+			height: 300px;
+			padding-top: 217px;
+			margin-left: 245px;
+			position: absolute;
+		}
+		.shanghai{
+			width: 210px;
+			height: 300px;
+			padding-top: 217px;
+			margin-left: 520px;
+			position: absolute;
+		}
+		.hangzhou{
+			width: 210px;
+			height: 300px;
+			padding-top: 217px;
+		    
+			margin-left: 805px;
+			position: absolute;
+		}
+		.shenzhen{
+			width: 210px;
+			height: 300px;
+			padding-top: 217px;
+		    
+			margin-left: 1085px;
+			position: absolute;
+		}
+		.you{
+			position: absolute;
+            padding-left: 1355px;
+            padding-top: 345px;
+			width: 30px;
+			height: 40px;
+		}
+		.liaojie{
+			position: absolute;
+			margin-top: 595px;
+			margin-left: 665px;
+			width: 245px;
+			height: 80px;
+			text-align: center;
+			font-size: 20px;
+		}
+		.zixun{
+			height: 910px;
+		}
+		.zuixinzixun{
+			font-size: 30.619px;
+            font-family: "Microsoft YaHei";
+            color: rgb( 51, 51, 51 );
+			margin-top: 60px;
+			text-align: center;
+		}
+		.lat{
+			font-size: 25px;
+            font-family: "Aparajita";
+            color: rgb( 51, 51, 51 );
+			margin-top: 23px;
+			text-align: center;
+		}
+		.diqiu{
+			position: absolute;
+			margin-top: 50px;
+			margin-left: 250px;
+			width: 479px;
+			height: 298px;
+		}
+		.jiaoyi{
+			position: absolute;
+			margin-top: 85px;
+			margin-left: 805px;
+			height: 250px;
+			width: 510px;
+		}
+		.mingzhi{
+            font-size: 15px;
+            font-family: "Microsoft YaHei";
+            color: rgb( 51, 51, 51 );
+		}
+		.tar{
+            font-size: 12px;
+            font-family: "Microsoft YaHei";
+            color: rgb( 51, 51, 51 );
+            margin-top: 20px;
+		}
+		.zi{
+			margin-top: 40px;
+            font-size: 12px;
+            font-family: "Microsoft YaHei";
+            color: rgb( 150, 150, 150 );
+		}
+		.xiangqing{
+           margin-top: 30px;
+
+		}
+		.wen1{
+			position:absolute ;
+			margin-top: 420px;
+			margin-left: 250px;
+			list-style: none;
+			font-size: 14px;
+            font-family: "Microsoft YaHei";
+            color: rgb( 121, 121, 121 );
+            line-height: 2;
+           
+		}
+		.wli >li{
+			list-style: none;
+			border-bottom: 1px dashed rgb(121,121,121);
+		}
+		.wli li>a  {
+			color: rgb(121,121,121);
+		}
+
+		.wlil {
+			list-style: none;
+		}
+		.wlil>a{
+			color: rgb(121,121,121);
+		}
+		.wen2{
+			position:absolute ;
+			margin-top: 420px;
+			margin-left: 805px;
+			list-style: none ;
+			font-size: 14px;
+            font-family: "Microsoft YaHei";
+            color: rgb( 121, 121, 121 );
+            line-height: 2;
+			}
+		.diceng{
+			position:absolute;
+			margin-top: 775px;
+			height: 100px;
+			width: 1560px;
+			background-color: rgb(245,245,245);
+		}	
+		.zizhi{
+              position: absolute;
+              margin-left: 227px;
+              margin-top: 25px;
+              width: 205px;
+              height: 100px;
+		}
+		.t{
+			height: 100px;
+			width: 50px;
+			float: left;
+		}
+		.zizhi1{
+			  font-size: 19px;
+			  font-family: "Microsoft YaHei";
+			  color: rgb( 51, 51, 51 );
+			  float: left;
+			  margin-left: 25px;
+		}
+		.zizhi2{
+			font-size: 13px;
+            font-family: "Microsoft YaHei";
+            color: rgb( 79, 79, 79 );
+            margin-top: 10px; 
+            margin-left: 25px;
+            float: left;
+		}
+		.zhifu{
+			position: absolute;
+			margin-left: 477px;
+			width: 300px;
+            height: 50px;
+            margin-top: 25px;
+            border-left:1px solid   rgb( 121, 121, 121 );
+		}
+		.t2{
+			float: left;
+			margin-left: 25px;
+			width: 50px;
+			height: 100px;
+		}
+		.baoxian{
+			position: absolute;
+			margin-left: 779px;
+			width: 300px;
+            height: 50px;
+            margin-top: 25px;
+            border-left:1px solid   rgb( 121, 121, 121 );
+		}
+		.shouhou{
+			position: absolute;
+			margin-left: 1080px;
+			width: 300px;
+            height: 50px;
+            margin-top: 25px;
+            border-left:1px solid   rgb( 121, 121, 121 );
+		}
+		.zui{
+			height: 385px;
+			width: 1560px;
+			background-color: rgb(50,50,50);
+			margin-top: 62px;
+		}
+		.zl{
+            height: 215px;
+            width: 180px;
+            float: left;
+            color: rgb(255,255,255);
+            padding-top: 75px;
+		}
+		.zl>ul>li>a{
+			color: rgb(255,255,255);
+		}
+		.er{
+			height: 215px;
+			width: 225px;
+			float: left;
+			padding-top: 70px;
+			color: rgb(255,255,255);
+		}
+		.qq{
+			width:265px ;
+			height: 146px;
+			margin-top: 70px;
+			float: left;
+			border-left: 1px solid rgb(156,156,156);
+			
+		}
+		.hr{
+			position: absolute;
+			margin-top: 263px;
+			height: 0.5px;
+			color: rgb(141,141,141);
+			width: 1560px;
+		}
+		.xia{
+			position: absolute;
+			margin-top: 265px;
+			height: 58px;
+			padding-top: 43px;
+			text-align: center;
+		}
+		.xial{
+			margin-left: 410px;
+			height: 20px;
+			float: left;
+			list-style: none;
+			text-align: center;
+			color: rgb(255,255,255);
+			padding-left: 15px;
+
+		}
+		.xiax{
+			margin-left: 15px;
+			text-align: center;
+			border-left:1px solid rgb(255,255,255);
+			height: 20px;
+			float: left;
+			padding-left: 15px;
+			list-style: none;
+			color: rgb(255,255,255);
+		}
+		.xial>a{
+			color: rgb(255,255,255);
+		}
+		.xiax>a{
+			color: rgb(255,255,255);
+		}
+		.zhong{
+			position: absolute;
+			font-size: 14px;
+			margin-top: 337px;
+			color: rgb(255,255,255);
+			margin-left: 640px;
+		}
+		
+
+
+	</style>
+</head>
+<body>
+	<div class="div">
+		<div class="shou">
+		   <div style="padding-top:35px;">
+			  <img src="images/zhongzhixinyuan.png" alt="">
+		   </div>
+        </div>
+        <ul class="list_1">
+    	    <li class="ldaohang1">
+    	    	<a href="#" style="color:blue;border-bottom: 2px solid blue;">首页</a>
+    	    </li>
+    	    <li class="ldaohang">
+    	    	<a href="#">关于我们</a>
+    	    </li>
+    	    <li class="ldaohang">
+    	    <a href="#">中智服务</a>
+    	    </li>
+    	    <li class="ldaohang">
+    	    	<a href="#">解决方案</a>
+    	    </li>
+    	    <li class="ldaohang">
+    	    	<a href="#">最新资讯</a>
+    	    </li>
+    	    <li class="ldaohang2">
+    	    	<a href="#">联系我们</a>
+    	    </li>
+        </ul>
+        <div class="tu">
+        	
+        </div>
+    </div>    
+        <div class="fuwu">
+        	<div>服务项目</div>
+
+        	<div style="font-size:23px;margin-top:26px;">SERVICE ITEMS</div>
+        </div>
+    
+        <div class="xiangmu">
+        	<div class="xiang1">
+        		<img src="images/shang-1_09.png" alt="">
+                <span style="margin-top:21px;">工商代理</span>
+                <ul class="xul">
+                	<li><a href="#">公司注册</a></li>
+                    <li><a href="#">分公司注册地址</a></li>
+                    <li><a href="#">分公司注册</a></li>
+                    <li><a href="#">外资注册</a></li>
+                    <li><a href="#">股权变更</a></li>
+                    <li><a href="#">公司注销</a></li>
+                </ul>
+        	</div> 
+        	<div class="xiang">
+        		<img src="images/shang-2_11.png" alt="">
+        		<span>财务代理</span>
+        		<ul class="xul">
+        			<li><a href="#">代理记账</a></li>
+        			<li><a href="#">税务筹划</a></li>
+        			<li><a href="#">审计服务</a></li>
+        		</ul>
+        	</div>
+        	<div class="xiang">
+        		<img src="images/shang-3_13.png" alt="">
+        		<span>资质服务</span>
+        		<ul class="xul">
+        			<li><a href="#">各类许可证</a></li>
+        			<li><a href="#">资质审批</a></li>
+        			<li><a href="#">高新企业</a></li>
+        		    <li><a href="#">商标专利</a></li>
+        		</ul>
+        	</div>
+        	<div class="xiang">
+        		<img src="images/shang-4_15.png" alt="">
+        		<span>特色服务</span>
+        		<ul class="xul">
+        			<li></li>
+        		</ul>
+        	</div>
+        	<div class="xiang1">
+        		<img src="images/xia-1_21.png" alt="">
+        		<span>公积金社保代理</span>
+        	</div>
+        	<div class='xiang'>
+        		<img src="images/xia-2_22.png" alt="">
+        		<span>办公室租赁</span>
+        	</div>
+        	<div class="xiang">
+        		<img src="images/xia-3_23.png" alt="">
+        		<span>营业执照转让</span>
+        	</div>
+        	<div class="xiang">
+        		<img src="images/xia-4_25.png" alt="">
+        		<span>法律服务</span>
+        	</div>
+        </div>
+   
+	
+	<div class="fangan">
+        	<div class="jiejue">
+        		<div>解决方案</div>
+        		<div class="solution">SOLUTION</div>
+        	</div>
+        	<div class="zuo">
+        		<a href="#"><img src="images/jiantou,zuo_12.png" alt=""></a>
+        	</div>
+        	<div class="beijing">
+        		<a href
+        		="#"><img src="images/beijing_03.png"></a>
+        	</div>
+        	<div class="shanghai">
+        		<a href="#"><img src="images/shanghai_05.png" alt=""></a>
+        	</div>
+        	<div class="hangzhou">
+        		<a href="#"><img src="images/hangzhou_07.png" alt=""></a>
+        	</div>
+        	<div class="shenzhen">
+        		<a href="#"><img src="images/shenzhen_09.png" alt=""></a>
+        	</div>
+        	<div class="you">
+        		<a href="#"><img src="images/jiantou,you_15.png" alt=""></a>
+        	</div>
+        	<div class="liaojie">
+        		<a href="#"><img src="images/yuanjiaojuxing_03_03.png" alt=""></a>
+        	</div>
+    </div>
+    <div class="zixun">
+    	<div class="zuixinzixun">最新资讯</div>
+    	<div class="lat">LATEST INFORMATION</div>
+    	<div class="diqiu">
+    		<img src="images/diqiu.png" alt="">
+    	</div>
+    	<div class="jiaoyi">
+    		<div class="mingzhi">交易明智&方便</div>
+    		<div class="tar">TRANSACTION WISE &CONVENIENT</div>
+    		<p class="zi">要适应快速发展的差价合约市场，客户需要一个能让他们不用经纪商的介入就能分
+                           析实时报价、进行实时交易以及应用投资策略的平台。他们需要一个简单便捷的界
+                           面来管理他们的账户，并能轻松查看图标和报告。</p>
+            <div class="xiangqing">
+            	<a href="#"><img src="images/yuanjiao,lan_03_03.png" alt=""></a>
+            </div>               
+    	</div>
+    	<div class="wen1">
+    		<ul class="wli">
+    			<li><a href="#">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</a> </li>
+    			<li><a href="#">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</a> </li>
+    			<li><a href="#">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</a> </li>
+    			<li><a href="#">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</a> </li>
+    			<li><a href="#">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</a> </li>
+    			<li class="wlil"><a href="#">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</a> </li>
+    		</ul>
+    	</div>
+    	<div class="wen2">
+    		<ul class="wli">
+    			<li><a href="#">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</a> </li>
+    			<li><a href="#">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</a> </li>
+    			<li><a href="#">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</a> </li>
+    			<li><a href="#">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</a> </li>
+    			<li><a href="#">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</a> </li>
+    			<li><a href="#">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</a> </li>
+    		</ul>
+    	</div>
+    	<div class="diceng">
+    		<div class="zizhi">
+    			<div class="t"><img src="images/di-1_07.png" alt=""></div>
+    			
+    			<div class="zizhi1">
+    				资质认证
+    			</div>
+    			<div class="zizhi2">
+    			    服务商100%实名认证
+    			</div>
+    		</div>
+    		<div class="zhifu">
+    			<div class="t2">
+    				<img src="images/di-3_09.png" alt="">
+    			</div>
+    			<div class="zizhi1">
+    				支付安全
+    			</div>
+    			<div class="zizhi2">
+    			   明码标价支付及信息安全
+    			</div>
+    		</div>
+    		<div class="baoxian">
+    			<div class="t2">
+    				<img src="images/di-4_15.png" alt="">
+    			</div>
+    			<div class="zizhi1">
+    				保险赔付
+    			</div>
+    			<div class="zizhi2">
+    			   为您提供担保赔付
+    			</div>
+    		</div>
+    		<div class="shouhou">
+    			<div class="t2">
+    				<img src="images/QQ_12.png" alt="">
+    			</div>
+    			<div class="zizhi1">
+    				售后无忧
+    			</div>
+    			<div class="zizhi2">
+    			   服务出问题经理全程跟进
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="zui">
+    	<div class="zl">
+    		
+    	</div>
+    	<div class="zl">
+    		<span style="font-size:18px;">中智信元</span>
+    		<ul style="list-style:none;font-size:14px;margin-top:30px;line-height:2.5;">
+    			<li><a href="#">加入我们</a></li>
+    			<li><a href="#">联系我们</a></li>
+    			<li><a href="#">联系我们</a></li>
+    		</ul>
+    	</div>
+    	<div class="zl">
+    		<span style="font-size:18px;">订单服务</span>
+    		<ul style="list-style:none;font-size:14px;margin-top:30px;line-height:2.5;">
+    			<li><a href="#">支付方式</a></li>
+    			<li><a href="#">退款说明</a></li>
+    			<li><a href="#">购买流程</a></li>
+    		</ul>
+    	</div>
+    	<div class="zl">
+    		<span style="font-size:18px;">售后服务</span>
+    		<ul style="list-style:none;font-size:14px;margin-top:30px;line-height:2.5;">
+    			<li><a href="#">在线问答</a></li>
+    			<li><a href="#">服务中心</a></li>
+    			<li><a href="#">售后政策</a></li>
+    		</ul>
+    	</div>
+    	<div class="zl">
+    		<span style="font-size:18px;">常见问题</span>
+    		<ul style="list-style:none;font-size:14px;margin-top:30px;line-height:2.5;">
+    			<li><a href="#">新手帮助</a></li>
+    			<li><a href="#">支付帮助</a></li>
+    			<li><a href="#">开具发票</a></li>
+    		</ul>
+    	</div>
+    	<div class="er">
+    		<div style="height:215px;float:left;">
+    			<img src="images/erweima_22.png" alt="">
+    		</div>
+    		<div style="float:left ;padding-left:35px;">
+    			微
+    		</div>
+    		<div style="float:left ;padding-left:35px;margin-top:10px;">
+    			信
+    		</div>
+    		<div style="float:left ;padding-left:35px;margin-top:10px;">
+    		    扫
+    		</div>
+    		<div style="float:left ;padding-left:35px;margin-top:10px;">
+    			一
+    		</div>
+    		<div style="float:left ;padding-left:35px;margin-top:10px;">
+    			扫
+    		</div>
+    	</div>
+    	<div class="qq">
+    		<div style="font-size:18px;color:rgb(255,255,255);margin-left:40px;">
+    			咨询热线：400-000-0000
+    		</div>
+    		<div style="font-size:16px;color:rgb(255,255,255);margin-left:40px;margin-top:25px;">
+    			<img src="images/qq_03.png" alt="">
+    			1234567888@qq.com
+    		</div>
+    		<div style="font-size:16px;color:rgb(255,255,255);margin-left:40px;margin-top:25px;">
+    			<img src="images/weixin_24.png" alt="">
+    			某某企业网站官方微信
+    		</div>
+    	</div>
+    	<div class="hr">
+    		<hr>
+    	</div>
+    	<div class="xia">
+    		<ul>
+    			<li class="xial"><a href="">首页</a></li>
+    		    <li class="xiax"><a href="">工商代理</a></li>
+    		    <li class="xiax"><a href="">财务代记账</a></li>
+    		    <li class="xiax"><a href="">股权交易与变更</a></li>
+    		    <li class="xiax"><a href="">企业贷款</a></li>
+    		    <li class="xiax"><a href="">办公室租赁</a></li>
+    		    <li class="xiax"><a href="">社保公积金代理</a></li>
+    		    <li class="xiax"><a href="">法律服务</a></li>
+    		</ul>
+    		
+    	</div>
+    	<div class="zhong">
+    		© 2017 2018 中智信元有限公司 版权所有
+    	</div>
+    </div>   
+
+</body>
+</html>
